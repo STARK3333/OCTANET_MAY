@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>LAMBORGHINI</title>
+    <link rel="stylesheet" href="lambo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="logo.png" alt="Lamborghini Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="#">Home</a>
+              <ul class="dropdown-content">
+                <li><a href="#">Main</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Models</a>
+              <ul class="dropdown-content">
+                <li><a href="#">Aventador</a></li>
+                <li><a href="#">Huracan</a></li>
+                <li><a href="#">Urus</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Ownership</a>
+              <ul class="dropdown-content">
+                <li><a href="#">Warranty</a></li>
+                <li><a href="#">Maintenance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Motorsport</a>
+              <ul class="dropdown-content">
+                <li><a href="#">Racing</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Store</a>
+              <ul class="dropdown-content">
+                <li><a href="#">Merchandise</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <video autoplay muted loop id="bg-video">
+        <source src="lambo.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content">
+        <h1>Drive Beyond Imagination</h1>
+        <button id="getStarted">Explore Models</button>
+      </div>
+    </section>
+
+    <section class="models" id="models">
+      <div class="container">
+        <div class="model model-aventador">
+          <div class="model-info">
+            <h2>Aventador</h2>
+            <p>The pinnacle of Lamborghini's portfolio</p>
+            <ul>
+              <li>V12 Engine</li>
+              <li>740 HP</li>
+              <li>0-60 mph in 2.9 seconds</li>
+            </ul>
+          </div>
+        </div>
+        <div class="model model-huracan">
+          <div class="model-info">
+            <h2>Huracan</h2>
+            <p>Everyday supercar with breathtaking performance</p>
+            <ul>
+              <li>V10 Engine</li>
+              <li>640 HP</li>
+              <li>0-60 mph in 2.5 seconds</li>
+            </ul>
+          </div>
+        </div>
+        <div class="model model-urus">
+          <div class="model-info">
+            <h2>Urus</h2>
+            <p>The world's first Super SUV</p>
+            <ul>
+              <li>V8 Engine</li>
+              <li>650 HP</li>
+              <li>0-60 mph in 3.6 seconds</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="container">
+        <h2>The Story of Lamborghini</h2>
+        <p>
+          Founded by Ferruccio Lamborghini in 1963, Lamborghini aimed to produce
+          refined grand touring cars to rival established marques. Its first
+          models were noted for their refinement, power, and comfort, and the
+          Miura sports coupé, released in 1966, set a new standard for
+          high-performance cars.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Lamborghini Fan Page. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("getStarted")
+        .addEventListener("click", function () {
+          document
+            .getElementById("models")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+  </body>
+</html>

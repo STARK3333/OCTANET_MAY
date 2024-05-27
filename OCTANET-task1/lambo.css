@@ -1,0 +1,223 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #060000;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s;
+}
+nav ul li:hover > a {
+  color: #ffd700;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #161515;
+  min-width: 150px;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.dropdown-content li {
+  padding: 10px;
+  color: #fff;
+  transition: background 0.3s;
+}
+.dropdown-content li a {
+  color: #fff;
+  text-decoration: none;
+}
+.dropdown-content li:hover {
+  background-color: #444;
+}
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+.hero {
+  position: relative;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  border-radius: 10px;
+}
+.hero h1 {
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+.hero button {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.hero button:hover {
+  background: #ffa500;
+  transform: scale(1.1);
+}
+.models {
+  background: #675a5a;
+  padding: 50px 0;
+}
+.models .container {
+  justify-content: space-around;
+}
+.model {
+  background: #f4f4f4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.model-info {
+  padding: 150px 20px;
+  color: #fffefe;
+}
+.model-info h2 {
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+}
+.model-info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.model-info ul {
+  list-style: none;
+  padding: 0;
+}
+.model-info ul li {
+  margin: 10px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+}
+.model:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.model img {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.model-aventador {
+  background-image: url("aventador.jpg");
+  background-color: #786868;
+  background-blend-mode: multiply;
+}
+.model-huracan {
+  background-image: url("huracan.jpg");
+  background-color: #786868;
+  background-blend-mode: multiply;
+}
+.model-urus {
+  background-image: url("urus.jpg");
+  background-color: #786868;
+  background-blend-mode: multiply;
+}
+.story {
+  padding: 50px 20px;
+  background-image: url("https://theelitex.com/wp-content/uploads/2022/06/winkelmann_103-1024x682.jpg");
+  background-color: #786868;
+  background-blend-mode: multiply;
+  text-align: center;
+  color: #fff;
+}
+.story .container {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #f8f6f3;
+}
+.story h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.story p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+footer {
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
